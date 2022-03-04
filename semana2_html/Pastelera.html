@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pastelera Danis</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Estilo de header */
+        header {
+            background-color: rgb(115, 224, 115);
+            padding: 10px;
+            text-align: center;
+            font-size: 15px;
+            color: rgb(3, 3, 3);
+        }
+
+        /* Crear 2 columnas con la misma posición en la fila */
+        nav {
+            float: left;
+            width: 90%;
+            height: 500px;
+            /* only for demonstration, should be removed */
+            background: #ccc;
+            padding: 20px;
+        }
+        nav1 {
+            float: left;
+            width: 90%;
+            height: 300px;
+            /* only for demonstration, should be removed */
+            background: rgb(228, 203, 203);
+            padding: 20px;
+        }
+
+        nav dl {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        article {
+            float: left;
+            padding: 20px;
+            width: 10%;
+            background-color: #f1f1f1;
+            height: 300px;
+        }
+
+        /* Clear floats after the columns */
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Estilo de footer */
+        footer {
+            background-color: rgb(65, 124, 85);
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        /* Responsive layout */
+        @media (max-width: 600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <img src="img\Danis.png" alt="logoDanis" width="100px" height="100px">
+        <h1>Bienvenidos a Danis</h1>
+
+    </header>
+
+    <section>
+        <nav>
+
+            
+            <dl>
+                <dt><b>PASTELES ( 10 PERSONAS)</b></dt>
+                <dd>- 3 LECHES ................................. $450</dd>
+                <dd>- FRESAS   .................................... $350</dd>
+                <dd>- CHOCOLATE............................. $250</dd>
+                <dd>- VAINILLA ................................... $250</dd>
+                <dd>- DURAZNOS .............................. $550</dd>
+                <dd>- CHEESE CAKE ......................... $550</dd>
+                <dd>- IMPOSIBLE................................ $650</dd>
+                <dd>- TURIN........................................ $450</dd>
+<BR>
+                <dt><b>PASTELES ( 15 PERSONAS)</b></dt>
+                <dd>- 3 LECHES ................................. $950</dd>
+                <dd>- FRESAS   .................................... $850</dd>
+                <dd>- CHOCOLATE............................. $550</dd>
+                <dd>- VAINILLA ................................... $750</dd>
+                <dd>- DURAZNOS .............................. $950</dd>
+                <dd>- CHEESE CAKE ....................... $1050</dd>
+                <dd>- IMPOSIBLE................................ $750</dd>
+                <dd>- TURIN........................................ $950</dd>
+            </dl>
+        </nav>
+
+        <nav1>
+        <h3>ADORNA TU PASTEL</h3>
+
+        <table>
+            <tr>
+                <th>INGREDIENTE</th>
+                <th>COSTO</th>
+            </tr>
+            <tr>
+                <td>FRUTA NATURAL A ELEGIR</td>
+                <td> $50 </td>
+
+            </tr>
+            <tr>
+                <td>DULCES A GRANEL A ELEGIR</td>
+                <td> $80</td>
+
+            </tr>
+        </table>
+
+        <h3>¡ORDENA YA!</h3>
+    
+     
+        <a href="pedido.html" target="#">
+        <input type='button' name='boton' value='Ordenar' style='width:70px; height:25px'> 
+        </a>
+        </nav1>
+
+
+        <article>
+            <h1> </h1>
+            <p></p>
+        </article>
+    </section>
+
+    <footer>
+        <p>Contactanos</p>
+        <br><br>Estamos en Plaza Ecatepec Local 21
+        Contáctanos 5523342232 , servicio de 10am a 8pm<br><br>
+    </footer>
+
+</body>
+
+</html>

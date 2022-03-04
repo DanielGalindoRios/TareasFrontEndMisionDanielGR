@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordena a Danis</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Estilo de header */
+        header {
+            background-color: rgb(115, 224, 115);
+            padding: 10px;
+            text-align: center;
+            font-size: 15px;
+            color: rgb(3, 3, 3);
+        }
+
+        /* Crear 2 columnas con la misma posición en la fila */
+        nav {
+            float: left;
+            width: 90%;
+            height: 1000px;
+            /* only for demonstration, should be removed */
+            background: #ccc;
+            padding: 20px;
+        }
+        nav1 {
+            float: left;
+            width: 90%;
+            height: 300px;
+            /* only for demonstration, should be removed */
+            background: rgb(228, 203, 203);
+            padding: 20px;
+        }
+
+        nav dl {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        article {
+            float: left;
+            padding: 20px;
+            width: 10%;
+            background-color: #f1f1f1;
+            height: 300px;
+        }
+
+        /* Clear floats after the columns */
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Estilo de footer */
+        footer {
+            background-color: rgb(65, 124, 85);
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        /* Responsive layout */
+        @media (max-width: 600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <img src="img\Danis.png" alt="logoDanis" width="100px" height="100px">
+        <h1>Ordena a Danis</h1>
+
+    </header>
+
+    <section>
+        <nav>
+    <h1>Datos para el envio</h1>
+    <form action="pedidopastel.js">
+        <label for="Nombre">Nombre</label><br>
+        <input type="text" id="Nombre" name="Nombre"><br>
+        <label for="celular">Teléfono</label><br>
+        <input type="tel" name="celular" id="celular" maxlength="10"><br>
+        <label for="correo">Email</label><br>
+        <input type="email" name="correo" id="correo"><br><br>
+        <label for="Nombre">Descripción (Opcional)</label><br>
+        <input type="text" id="Descripcion" name="Descripcion"><br>
+
+       
+        <h2>Sabores</h2>
+        <input type="checkbox" id="sabor1" name="sabor1" value="Emoción intensa">
+        <label for="sabor1">Vainilla</label><br>
+        <input type="checkbox" id="sabor2" name="sabor2" value="Sensación indescriptible">
+        <label for="sabor2">Chocolate</label><br>
+        <input type="checkbox" id="sabor3" name="sabor3" value="Hecho incomprensible">
+        <label for="sabor3">3 leches</label><br>
+        <input type="checkbox" id="sabor4" name="sabor4" value="Hecho incomprensible">
+        <label for="sabor4">Durazno</label><br>
+        <input type="checkbox" id="sabor5" name="sabor5" value="Hecho incomprensible">
+        <label for="sabor5">Fresas</label><br><br>           
+       
+        <h2>Adornalo</h2>
+    <dl>
+        <dt><b><input type="checkbox" id="adorno1" name="adorno1" value="Frutanatural">
+        <label for="adorno1">Fruta natural</label><br></b></dt>
+        <dd><input type="radio" id="Fresa" name="adorno1" value="Fresa">
+        <label for="Fresa">Fresa</label><br></dd>
+        <dd><input type="radio" id="Durazno" name="adorno1" value="Durazno">
+        <label for="Durazno">Durazno</label><br></dd>
+        <dd>  <input type="radio" id="Cerezas" name="adorno1" value="Cerezas">
+        <label for="Cerezas">Cerezas</label><br></dd><br>
+
+        <dt><b><input type="checkbox" id="adorno2" name="adorno2" value="Dulces">
+         <label for="adorno2">Dulces </label><br></b></dt>
+         <dd> <input type="radio" id="Chocoretas" name="adorno2" value="Chocoretas">
+        <label for="Chocoretas">Chocoretas</label><br></dd>
+        <dd><input type="radio" id="Panditas" name="adorno2" value="Panditas">
+        <label for="Panditas">Panditas</label><br></dd>
+        <dd><input type="radio" id="Salvavidas" name="adorno2" value="Salvavidas">
+        <label for="Salvavidas">Salvavidas</label><br></dd><br>
+
+        <dt><b><input type="checkbox" id="adorno3" name="adorno3" value="Fondant">
+        <label for="sabor3">Podemos imprimir un personaje en papel y tinta comestible</label></b></dt><br>
+        <label for="Personaje">¿Qué personaje deseas?</label><br>
+        <input type="Personaje" id="Personaje" name="Personaje"><br>
+        <input type="file" id="archivo1" name="archivo1" multiple><br><br>
+    </dl>
+        
+        <input type="reset">    
+        <input type="submit">
+        
+        
+    </form>   
+    <a href="Pastelera.html">
+        <input type='button' name='boton' value='Volver' style='width:70px; height:25px'> 
+        </a>
+    </nav>
+    </section>
+
+    <footer>
+        <p>Contactanos</p>
+        <br><br>Estamos en Plaza Ecatepec Local 21
+        Contáctanos 5523342232 , servicio de 10am a 8pm<br><br>
+    </footer>
+
+</body>
+
+</html>
